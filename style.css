@@ -1,6 +1,30 @@
-.bg-red{
-    background-color: red;
+.bg-black{
+    background-color: black;
 }
-.bg-purple{
-    background-color: purple;
+
+:root {
+    --grid-cols: 16;
+    --grid-rows:16
+}
+#gridContainer {
+
+    display: grid;
+
+    grid-gap: 0cm;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+
+}
+
+.singleCll {
+    padding: 0cm;
+    border: 15px solid black(0, 0, 0);
+    text-align: center;
+}
+.grid {
+    display: grid;
+    max-width: 500px;
+    min-height: 500px;
+    margin: 1rem auto;
+    border: 1px solid let(--border)
 }
